@@ -1,68 +1,46 @@
-
-
-
 import React, {useState}  from 'react';
 import {StyleSheet, Text, TextInput, View} from 'react-native';
 
-// <View style={{flex: 3, backgroundColor: 'green'}} />
-
-
-
-  
-  
-
 const MyFlex = () => {
-
   const [text, setText] = useState('');
-
   return (
  <>
-   
-   <View style={[styles.container0, {flexDirection: 'column',},]}>
+  <View style={[styles.container0, {flexDirection: 'column',},]}>
+  </View>
 
-    </View>
-    <View style={[styles.container1, {flexDirection: 'row',},]}>
+  <View style={[styles.container1, {flexDirection: 'row',},]}>
       
-      <View style={{flex: 1, backgroundColor: 'darkorange', paddingVertical:55 }}>
+    <View style={{flex: 1, backgroundColor: 'darkorange', paddingVertical:55 }}>
       <TextInput style={{ fontSize:18, fontWeight: 'bold', textAlign:"center" }}
         placeholder="Enter Date!       "
         onChangeText={newText => setText(newText)}
         defaultValue={''}
       />
-      
     </View>
-      <View style={{flex: 2, borderLeftWidth:5, backgroundColor: 'darkorange'}}>
 
+    <View style={{flex: 2, borderLeftWidth:5, backgroundColor: 'darkorange'}}>
       <Text style={styles.baseText}>
       <Text style={styles.titleText}>
       Wouldn't It Be Great If?
       </Text>
       </Text>
-      </View>
+    </View>
      
-      </View>
-      <View style={[styles.container2, {flexDirection: 'column',},]}>
+  </View>
+
+  <View style={[styles.container2, {flexDirection: 'column',},]}>
       <View style={{backgroundColor: 'darkorange'}} />
-      <TextInput style={{flex: 5, backgroundColor: 'darkorange', padding: 5, fontSize:30, fontStyle:"italic", textAlign:"center", }}
+        <TextInput style={{flex: 5, backgroundColor: 'darkorange', padding: 5, fontSize:30, fontStyle:"italic", textAlign:"center", }}
         placeholder="Enter WIBGI Initiative!"
         onChangeText={newText => setText(newText)}
         defaultValue={''}
       />
       <View style={{flex: 2, backgroundColor: 'darkorange'}} />
-      
-  
-      </View>
-      <View style={[styles.container0, {flexDirection: 'column',},]}>
+  </View>
 
-      </View>
-    
-      
-    </>
-
-
-
-
-  
+  <View style={[styles.container0, {flexDirection: 'column',},]}>
+  </View>      
+</>
   );
 };
 
@@ -95,7 +73,6 @@ const styles = StyleSheet.create({
     borderLeftColor:"darkgrey",
     borderRightWidth:3,
     borderRightColor:"darkgrey",
-  
   },
 
   baseText: {
@@ -104,12 +81,10 @@ const styles = StyleSheet.create({
     marginTop:32,
     paddingBottom: 0,
     padding: 0,
-
   },
   titleText: {
     fontSize: 30,
     fontWeight: 'bold',
-    
   },
 });
 
