@@ -23,15 +23,15 @@ const MyFlex = () => {
     </View>
     <View style={[styles.container1, {flexDirection: 'row',},]}>
       
-      <View>
-      <TextInput style={{flex: 2, backgroundColor: 'darkorange', padding: 5, fontSize:15 }}
-        placeholder="Enter Date!"
+      <View style={{flex: 1, backgroundColor: 'darkorange', paddingVertical:55 }}>
+      <TextInput style={{ fontSize:18, fontWeight: 'bold', textAlign:"center" }}
+        placeholder="Enter Date!       "
         onChangeText={newText => setText(newText)}
         defaultValue={''}
       />
       
     </View>
-      <View style={{flex: 3, borderLeftWidth:5, backgroundColor: 'darkorange'}}>
+      <View style={{flex: 2, borderLeftWidth:5, backgroundColor: 'darkorange'}}>
 
       <Text style={styles.baseText}>
       <Text style={styles.titleText}>
@@ -42,8 +42,8 @@ const MyFlex = () => {
      
       </View>
       <View style={[styles.container2, {flexDirection: 'column',},]}>
-      <View style={{flex: 1, backgroundColor: 'darkorange'}} />
-      <TextInput style={{flex: 3, backgroundColor: 'darkorange', padding: 5, fontSize:30, fontStyle:"italic", textAlign:"center", }}
+      <View style={{backgroundColor: 'darkorange'}} />
+      <TextInput style={{flex: 5, backgroundColor: 'darkorange', padding: 5, fontSize:30, fontStyle:"italic", textAlign:"center", }}
         placeholder="Enter WIBGI Initiative!"
         onChangeText={newText => setText(newText)}
         defaultValue={''}
